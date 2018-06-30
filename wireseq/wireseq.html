@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <title>Wire Sequences</title>
+</head>
+<body>
+    <div id="mainContent">
+        <table style="width:100%">
+            <tr>
+                <th>Wire 1</th>
+                <th>Wire 2</th> 
+                <th>Wire 3</th>
+            </tr>
+            <tr>
+                <td>
+                    <form action="javascript:cutgorithm('One')">
+                        A? <input type="checkbox" id="aOne"> <br>
+                        B? <input type="checkbox" id="bOne"> <br>
+                        C? <input type="checkbox" id="cOne"> <br>
+                        Color? <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="colorOne"> <br>
+                        <input type="submit">
+                    </form>
+                </td>
+                <td>
+                    <form action="javascript:cutgorithm('Two')">
+                        A? <input type="checkbox" id="aTwo"> <br>
+                        B? <input type="checkbox" id="bTwo"> <br>
+                        C? <input type="checkbox" id="cTwo"> <br>
+                        Color? <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="colorTwo"> <br>
+                        <input type="submit">
+                    </form>
+                </td>
+                <td>
+                    <form action="javascript:cutgorithm('Three')">
+                        A? <input type="checkbox" id="aThree"> <br>
+                        B? <input type="checkbox" id="bThree"> <br>
+                        C? <input type="checkbox" id="cThree"> <br>
+                        Color? <input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" type="text" id="colorThree"> <br>
+                        <input type="submit">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <th>Wire 1 results:</th>
+                <th>Wire 2 results:</th>
+                <th>Wire 3 results:</th>
+            </tr>
+            <tr>
+                <td><p id='returnPOne'></td>
+                <td><p id='returnPTwo'></td>
+                <td><p id='returnPThree'></td>
+            </tr>
+        </table>
+    </div>
+    <script src="wireseq.js"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@ function checkColumn(val, col, array) {
 
 function aletteratatime(letterIndex) {
     words[letterIndex + 1] = [];
-    var letters = document.getElementById('l' + letterIndex.toString()).value.split(',');
+    var letters = document.getElementById('l' + letterIndex.toString()).value.replace(/[^A-Za-z0-9]/g, '').toLowerCase().split('');
 
     //document.getElementById('test').innerHTML = letters;
     //return;

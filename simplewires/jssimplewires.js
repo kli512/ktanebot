@@ -20,12 +20,12 @@ function sWires() {
         parsedArray = [],
         lastWire,
         baseArray = [
-            document.getElementById('wone').value,
-            document.getElementById('wtwo').value,
-            document.getElementById('wthree').value,
-            document.getElementById('wfour').value,
-            document.getElementById('wfive').value,
-            document.getElementById('wsix').value
+            document.getElementById('wone').value.replace(/[^A-Za-z0-9]/g, '').toLowerCase(),
+            document.getElementById('wtwo').value.replace(/[^A-Za-z0-9]/g, '').toLowerCase(),
+            document.getElementById('wthree').value.replace(/[^A-Za-z0-9]/g, '').toLowerCase(),
+            document.getElementById('wfour').value.replace(/[^A-Za-z0-9]/g, '').toLowerCase(),
+            document.getElementById('wfive').replace(/[^A-Za-z0-9]/g, '').toLowerCase(),
+            document.getElementById('wsix').value.replace(/[^A-Za-z0-9]/g, '').toLowerCase()
         ];
     
     for (i = 0; i < baseArray.length; i++) {
